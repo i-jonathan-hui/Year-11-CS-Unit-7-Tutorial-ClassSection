@@ -1,4 +1,6 @@
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class ClassSectionTester {
 
@@ -10,7 +12,6 @@ public class ClassSectionTester {
 
     private int testsPassed = 0;
 
-    @org.junit.jupiter.api.BeforeEach
     public void setUp() {
         student1 = new Student("Adrian", "Wong", 17, 12);
         student2 = new Student("Sylvia", "Tseng", 16, 11);
@@ -19,7 +20,6 @@ public class ClassSectionTester {
         cs = new ClassSection("Art", 10, 12);
     }
 
-    @org.junit.jupiter.api.AfterEach
     public void tearDown() {
         student1 = null;
         student2 = null;
@@ -29,7 +29,7 @@ public class ClassSectionTester {
     }
 
     /** Tests for Student class. **/
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 1
     public void TestForFirstName() {
         setUp();
@@ -37,7 +37,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 2
     public void TestForLastName() {
         setUp();
@@ -45,7 +45,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 3
     public void TestForAge() {
         setUp();
@@ -53,7 +53,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 4
     public void TestForYearLevel() {
         setUp();
@@ -61,7 +61,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 5
     public void TestForToString() {
         setUp();
@@ -69,7 +69,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 6
     public void TestForSetFirstName() {
         setUp();
@@ -78,7 +78,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 7
     public void TestForSetLastName() {
         setUp();
@@ -87,7 +87,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 8
     public void TestForSetAge() {
         setUp();
@@ -96,7 +96,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 9
     public void TestForSetYearLevel() {
         setUp();
@@ -105,7 +105,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 10
     public void TestForSetId() {
         setUp();
@@ -116,7 +116,7 @@ public class ClassSectionTester {
 
     /** Tests for Class Section. **/
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 11
     public void TestForClassSectionSubject() {
         setUp();
@@ -124,7 +124,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 12
     public void TestForClassSectionYearLevel() {
         setUp();
@@ -132,7 +132,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 13
     public void TestForClassSectionCapacity() {
         setUp();
@@ -140,7 +140,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 14
     public void TestForClassSectionToString() {
         setUp();
@@ -148,7 +148,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 15
     public void TestForClassSectionSetSubject() {
         setUp();
@@ -157,7 +157,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 16
     public void TestForClassSectionSetCapacity() {
         setUp();
@@ -166,7 +166,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 17
     public void TestForClassSectionSetYearLevel() {
         setUp();
@@ -175,7 +175,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 18
     public void TestForClassSectionAddStudentAddsStudentCorrectly() {
         setUp();
@@ -184,7 +184,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 19
     public void TestForClassSectionAddStudentDoesNotAddIncorrectYearLevel() {
         setUp();
@@ -193,7 +193,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 20
     public void TestForClassSectionAddStudentAddsMultipleStudentsCorrectly() {
         setUp();
@@ -205,7 +205,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 21
     public void TestForClassSectionRemoveStudentRemovesStudentCorrectly() {
         setUp();
@@ -216,7 +216,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 22
     public void TestForClassSectionRemoveStudentRemovesMultipleStudentsCorrectly() {
         setUp();
@@ -230,7 +230,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 23
     public void TestIfMultipleIdenticalStudentObjectsCanBeAdded() {
         setUp();
@@ -240,7 +240,7 @@ public class ClassSectionTester {
         tearDown();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     // Test 24
     public void TestIfMultipleStudentsWithTheSameIdCanBeAdded() {
         setUp();
